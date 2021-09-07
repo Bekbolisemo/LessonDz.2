@@ -8,6 +8,6 @@ public class Dog extends Animal{
 
     @Override
     public void print() {
-        System.out.println("Зовут собаку " + getName() + "\n возраст собаки " + getAge() + " лет");
+        System.out.println( "Зовут собаку " + getName() + "\n возраст собаки " + getAge() + " лет");
     }
 }

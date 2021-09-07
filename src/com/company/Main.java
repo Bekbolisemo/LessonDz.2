@@ -2,25 +2,26 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
-        createObject("Dog");
-        createObject("Frog");
-        createObject("Cat");
+        Animal[] arrayAnimal ={createObject("Dog"),createObject("Frog"),createObject("Cat")};
+        for (Animal f:arrayAnimal) {
+            f.print();
+
+        }
+
     }
 
-    public static void createObject(String className){
+    public static Animal createObject(String className){
         switch (className){
             case "Dog":
                 Dog dog = new Dog("Alex",13);
-                dog.print();
-                break;
+                return dog;
             case "Frog":
                 Frog frog = new Frog("Dudly",4);
-                frog.print();
-                break;
+                return frog;
             case "Cat":
                 Cat cat = new Cat("Tom",15);
-                cat.print();
-            break;
+                return cat;
         }
+        return null;
     }
 }
