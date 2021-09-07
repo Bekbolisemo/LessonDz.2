@@ -1,6 +1,7 @@
 package com.company;
 
 public abstract   class Animal implements Printable {
+    protected static String peculiarity;
     private String name;
     private int age;
 
@@ -9,10 +10,10 @@ public abstract   class Animal implements Printable {
         this.age = age;
     }
 
-    public Animal(){
+    public
+    Animal(){
 
     }
-
     public String getName() {
         return name;
     }
@@ -28,5 +29,4 @@ public abstract   class Animal implements Printable {
     public void setAge(int age) {
         this.age = age;
     }
-
 }
